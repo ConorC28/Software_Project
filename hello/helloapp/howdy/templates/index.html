@@ -1,12 +1,23 @@
+{% load static %}
 <!--Howdy Template-->
 <html>
 	<head>
 		<meta charset ="utf-8">
-		<title>Howdy!!</title>	
+		<title>Welcome to the OGC - {% block title %}{% endblock %}</title>
+		
+		<link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+		<!--<link href="{{ STATIC_URL }}style.css" rel="stylesheet" type="text/css" />-->
+
+		
 	</head>
 	<body>
 		<h1>Howdy Sarahs and Bella Say WORK!!!!<h1>
 		<a href="/about/">About More Work</a><br>
 		<a href="/view/">About Other Meow</a>
+		
+	<!--<div class = "container">	
+		{% block pagecontent %}
+		Meow Meow
+      {% endblock %}-->
 	</body>
 </html>
